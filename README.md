@@ -1,3 +1,9 @@
-# SuperFlask
+# Flask Micro CMS
 
-- App (base application)
+## O que é?
+
+Um pequeno CMS para resolver algumas demandas de pequenos projetos.
+
+## O que vamos fazer? 
+
+...
