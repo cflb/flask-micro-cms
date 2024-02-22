@@ -1,18 +1,15 @@
-from flask import Flask
+from fastapi import FastAPI
 
-app = Flask(__name__)
+app = FastAPI()
 
-@app.route("/")
-def  inicio():
-    return "<h1>Pagina Incial</h1>"
+@app.get("/index")
+def index():
+    return "Pagina do index"
 
-@app.route("/falecom")
-def  fale_conosco():
-    return "<h1>fale conosco</h1>"
+@app.get("/")
+def home():
+    return "Página inicial"
 
-@app.route("/sobre")
-def  sobre():
-    return "<h1>Sobre nossa ideia</h1>"
-
-if "__main__" == __name__:
-    app.run()
+@app.get("/contato")
+def contato():
+    return "Página de contato"
